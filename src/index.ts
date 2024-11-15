@@ -1,13 +1,12 @@
-let hello: string = "hanafi";
+export enum Role {
+  ADMIN = "ADMIN",
+  USER = "USER",
+}
 
-console.log(hello);
-
-// Array biasa
-let pacarSaya: string[];
-pacarSaya = ["ariel tatum", "hinata"];
-
-//Array Tupple
-let selingkuhanya: [string, number, boolean];
-selingkuhanya = ["ariel tatum", 1, true];
-
-console.log({ pacarSaya });
+export enum Permission {
+  CREATE = "CREATE",
+  UPDATE = "UPDATE",
+  READ_ALL = "READ_ALL",
+  READ_ONE = "READ_ONE",
+  DELETE = "DELETE",
+}
